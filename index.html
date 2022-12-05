@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>شركة إنجاز لنقل الاثاث 01024836375</title>
+<title>شركة الخبير لنقل الاثاث 01027648045</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="logo.png" rel="icon" sizes="303x180" type="image/png">
 <link href="font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cairo:900,400&subset=arabic,latin-ext&display=swap" rel="stylesheet">
-<link href="Kareem.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo:900,400&display=swap" rel="stylesheet">
+<link href="enagz.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery-ui.min.js"></script>
@@ -18,7 +18,7 @@
 <script src="wb.panel.min.js"></script>
 <link rel="stylesheet" href="magnificpopup/magnific-popup.css">
 <script src="magnificpopup/jquery.magnific-popup.min.js"></script>
-<script src="wwb17.min.js"></script>
+<script src="wwb18.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -51,11 +51,11 @@ $(document).ready(function()
    });
    var Carousel1Opts =
    {
-      delay: 1300,
-      duration: 500,
-      easing: 'swing',
-      mode: 'puff',
-      direction: '',
+      delay: 1500,
+      duration: 700,
+      easing: 'linear',
+      mode: 'drop',
+      direction: 'up',
       scalemode: 3,
       pagination: true,
       pause: null,
@@ -69,6 +69,19 @@ $(document).ready(function()
    $("#Carousel1_next a").click(function()
    {
       $('#Carousel1').carouseleffects('next');
+   });
+   function onScrollCarousel1DividerTop()
+   {
+      var $obj = $('#Carousel1-divider-top');
+      if (!$obj.hasClass('show') && $obj.inViewPort(false))
+      {
+         $obj.addClass('show');
+      }
+   }
+   onScrollCarousel1DividerTop();
+   $(window).scroll(function(event)
+   {
+      onScrollCarousel1DividerTop();
    });
    $('#wb_count-up').parallax();
    function onScrollFontAwesomeIcon1()
@@ -247,6 +260,26 @@ $(document).ready(function()
    {
        $.panel.hide($("#headerPanelMenu_panel"));
    });
+   $("a[href*='#Bookmark2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark2').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark1').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark5']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark5').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#Bookmark4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_Bookmark4').offset().top }, 600, 'linear');
+   });
    new universalParallax().init();
 });
 </script>
@@ -298,33 +331,34 @@ $(document).ready(function()
 </a>
 <div id="headerPanelMenu_markup">
 <ul role="menu">
-   <li role="menuitem"><a href="#home" class="nav-link">Home</a></li>
-   <li role="menuitem"><a href="#about" class="nav-link">About</a></li>
-   <li role="menuitem"><a href="#projects" class="nav-link">Projects</a></li>
-   <li role="menuitem"><a href="#contact" class="nav-link">Contact</a></li>
+<li role="menuitem"><a href="./index.html" rel="noopener" class="nav-link">&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a></li>
+<li role="menuitem"><a href="#Bookmark2" class="nav-link">&#1593;&#1606; &#1575;&#1604;&#1588;&#1585;&#1603;&#1577;</a></li>
+<li role="menuitem"><a href="#Bookmark4" class="nav-link">&#1582;&#1583;&#1605;&#1575;&#1578;&#1606;&#1575;</a></li>
+<li role="menuitem"><a href="#Bookmark5" class="nav-link">&#1573;&#1578;&#1589;&#1604; &#1576;&#1606;&#1575;</a></li>
 </ul>
 </div>
 
 </div>
 <div id="wb_Image5">
-<img src="images/logo.png" id="Image5" alt="" width="131" height="78">
+<img src="images/moving-truck.png" id="Image5" alt="" width="131" height="131">
 </div>
 </div>
 <div class="col-2">
 <div id="wb_headerBreadcrumb">
 <ul id="headerBreadcrumb">
-<li><a href="#home">HOME</a></li>
-<li><a href="#about">ABOUT</a></li>
-<li><a href="#projects">PROJECTS</a></li>
-<li><a href="#contact">CONTACT</a></li>
+<li><a href="#Bookmark5">أتصل بنا</a></li>
+<li class="active" aria-current="page"></li>
+<li><a href="#Bookmark4">خدماتنا</a></li>
+<li><a href="#Bookmark2">عن الشركة</a></li>
+<li><a href="#Bookmark1">الرئيسية</a></li>
 </ul>
 
 </div>
 <div id="wb_Text1">
-<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br><br></span><span style="color:#000000;font-family:'Cairo';font-weight:900;font-size:24px;line-height:24px;"><strong>شركة </strong></span><span style="color:#FFA500;font-family:'Cairo';font-weight:900;font-size:24px;line-height:24px;"><strong>إنجاز </strong></span><span style="color:#000000;font-family:'Cairo';font-weight:900;font-size:24px;line-height:24px;"><strong>لنقل العفش<br></strong></span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br><br></span>
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br><br></span><span style="color:#FFC000;font-family:'Cairo';font-weight:900;font-size:24px;line-height:24px;"><strong>شركة </strong></span><span style="color:#FFFFFF;font-family:'Cairo';font-weight:900;font-size:24px;line-height:24px;"><strong>الخبير </strong></span><span style="color:#FFC000;font-family:'Cairo';font-weight:900;font-size:24px;line-height:24px;"><strong>لنقل العفش</strong></span><span style="color:#000000;font-family:'Cairo';font-weight:900;font-size:24px;line-height:16px;"><strong><br></strong></span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br><br></span>
 </div>
 <div id="wb_Text15">
-<span style="color:#000000;font-family:'Cairo';font-weight:900;font-size:15px;line-height:33px;">إتصل الإن على </span><span style="color:#FFA500;font-family:'Cairo';font-weight:900;font-size:19px;line-height:33px;">01024836375 </span>
+<span style="color:#FFC000;font-family:'Cairo';font-weight:900;font-size:15px;line-height:32px;">إتصل الإن على </span><span style="color:#FFC000;font-family:'Cairo';font-weight:900;font-size:17px;line-height:32px;"> </span><span style="color:#FFFFFF;font-family:'Cairo';font-weight:900;font-size:17px;line-height:32px;">01027648045 </span>
 </div>
 </div>
 <div class="col-3">
@@ -349,25 +383,26 @@ $(document).ready(function()
 </div>
 <div id="wb_Carousel1">
 <div id="Carousel1">
-<div class="frame">
-<div class="carousel-innerframe">
-<div id="wb_Image1">
-<img src="images/couple-movers.png" id="Image1" alt="" width="541" height="291"></div>
+<div class="frame frame-1">
+<div class="carousel-item-inner">
 </div>
 </div>
-<div class="frame" style="display:none">
-<div class="carousel-innerframe">
-<div id="wb_Image2">
-<img src="images/single-mover-o85eyd9zs4unr8qvedyu7bliqvgji7pars091j61z0.png" id="Image2" alt="" width="541" height="600"></div>
-</div>
-</div>
-<div class="frame" style="display:none">
-<div class="carousel-innerframe">
-<div id="wb_Image3">
-<img src="images/favpng_mover-relocation-family-fantastic-removals-johns-moving-storage.png" id="Image3" alt="" width="697" height="554"></div>
+<div class="frame frame-2" style="display:none">
+<div class="carousel-item-inner">
+<div id="wb_Bookmark1">
+<div id="Bookmark1"></div>
 </div>
 </div>
 </div>
+<div class="frame frame-3" style="display:none">
+<div class="carousel-item-inner">
+</div>
+</div>
+</div>
+<div id="Carousel1-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="m 500,40.86 c 0,0 22.91,59.14 144.4,59.14 H 1000 V 0 H 0 V 100 H 355.6 C 477.09,100 500,40.86 500,40.86 Z" />
+</svg></div>
 <div id="Carousel1_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
 <div id="Carousel1_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
 </div>
@@ -376,7 +411,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text2">
-<span style="color:#000000;font-family:Cairo;font-size:17px;line-height:32px;">تفكيرك في نقل عفش بيتك / مكتبك بقي في الأمان مع كبري شركات نقل الاثاث بمصر &quot;شركة إنجاز لنقل وتغليف الأثاث &quot; تتميز بان لديها فريق متخصص في فك التكييفات و الاجهزة الكهربائية كالتلفاز و المبردات دون الحاجة الي فنيين من الشركات المصنعة فمعنا كل شئ محسوب و مجهز له تماما , كما أننا نعتمد علي عمال متخصصين في فك و تركيب التكييفات والنجف والستائر الموجودة في المكان القديم و تركيبها مرة أخري في المكان الجديد.اما<br><br>لدينا خصومات كتير علي كافة الخدمات طوال السنة وبارخص سعر في مصر إتصل الأن : 01024836375…<br><br></span>
+<span style="color:#000000;font-family:Cairo;font-size:17px;line-height:33px;">تفكيرك في نقل عفش بيتك / مكتبك بقي في الأمان مع كبري شركات نقل الاثاث بمصر &quot;شركة الخبير لنقل وتغليف الأثاث &quot; تتميز بان لديها فريق متخصص في فك التكييفات و الاجهزة الكهربائية كالتلفاز و المبردات دون الحاجة الي فنيين من الشركات المصنعة فمعنا كل شئ محسوب و مجهز له تماما , كما أننا نعتمد علي عمال متخصصين في فك و تركيب التكييفات والنجف والستائر الموجودة في المكان القديم و تركيبها مرة أخري في المكان الجديد.اما<br><br>لدينا خصومات كتير علي كافة الخدمات طوال السنة وبارخص سعر في مصر إتصل الأن : 01027648045…<br><br></span>
 </div>
 </div>
 </div>
@@ -390,8 +425,8 @@ $(document).ready(function()
 <li><img class="image" loading="lazy" width="300" height="300" src="images/3.png" alt="" title=""></li>
 <li><img class="image" loading="lazy" width="300" height="300" src="images/2.png" style="display:none;" alt="" title=""></li>
 <li><img class="image" loading="lazy" width="300" height="300" src="images/4.png" style="display:none;" alt="" title=""></li>
-<div id="SlideShow1_back"><a style="cursor:pointer"><img alt="Back" style="border-style:none" src="images/carousel_back.png"></a></div>
-<div id="SlideShow1_next"><a style="cursor:pointer"><img alt="Next" style="border-style:none" src="images/carousel_next.png"></a></div>
+<div id="SlideShow1_back"><a class="slideshow-control" role="button"><img alt="Back" width="30" height="30" src="images/carousel_back.png"></a></div>
+<div id="SlideShow1_next"><a class="slideshow-control" role="button"><img alt="Next" width="30" height="30" src="images/carousel_next.png"></a></div>
 </ul>
 </div>
 </div>
@@ -515,8 +550,8 @@ $(document).ready(function()
       </div>
       <div class="clearfix visible-col2"></div>
       <div class="thumbnail">
-         <a href="images/p5.jpg" data-rel="" title="نجاريين لفك وتركيب العفش "><img alt="" src="images/p5.jpg" class="image" title="نجاريين لفك وتركيب العفش " width="293" height="293"></a>
-<div class="caption">نجاريين لفك وتركيب العفش </div>
+         <a href="images/p5.jpg" data-rel="" title="نجاريين لفك وتركيب العفش"><img alt="" src="images/p5.jpg" class="image" title="نجاريين لفك وتركيب العفش" width="293" height="293"></a>
+<div class="caption">نجاريين لفك وتركيب العفش</div>
       </div>
       <div class="thumbnail">
          <a href="images/p6.jpg" data-rel="" title="ونش مخصص لرفع وتنزيل العفش من الادوار العالية"><img alt="" src="images/p6.jpg" class="image" title="ونش مخصص لرفع وتنزيل العفش من الادوار العالية" width="293" height="293"></a>
@@ -525,6 +560,10 @@ $(document).ready(function()
       <div class="clearfix visible-col3"></div>
    </div>
 </div>
+</div>
+<div id="wb_Bookmark2">
+<div id="Bookmark2"></div>
+
 </div>
 </div>
 </div>
@@ -566,21 +605,27 @@ $(document).ready(function()
    </div>
 </div>
 </div>
+<div id="wb_Bookmark4">
+<div id="Bookmark4"></div>
+
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="Layer1">
 <div id="wb_Image4">
-<a href="tel:01024836375"><img src="images/free-phone-call-icon-535-thumb.png" id="Image4" alt="" width="62" height="62"></a></div>
+<a href="tel:01027648045"><img src="images/free-phone-call-icon-535-thumb.png" id="Image4" alt="" width="62" height="62"></a></div>
 </div>
+
+
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4-overlay"></div>
 <div id="LayoutGrid4">
 <div class="row">
 <div class="col-1">
 <div id="wb_Text9">
-<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">فنى تكييف<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">فنى تكييف<br><br><br><br><br><br><br><br><br><br><br><br><br></span>
 </div>
 </div>
 <div class="col-2">
@@ -596,7 +641,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text12">
-<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">فنى نجف<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">فنى نجف<br><br><br><br><br><br><br><br><br><br></span>
 </div>
 </div>
 <div class="col-2">
@@ -612,12 +657,16 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text13">
-<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">ونش هيدروليكى<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">ونش هيدروليكى<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span>
 </div>
 </div>
 <div class="col-2">
 <div id="wb_Text14">
 <span style="color:#FFFFFF;font-family:'Cairo';font-weight:900;font-size:15px;line-height:24px;"><br><br><br><br>يوجد لدينا ونش هيدروليكى <br>مخصص لرفع وتنزيل العفش <br>من الادوار المرتفعة<strong><br></strong><br><br><br><br><br></span>
+</div>
+<div id="wb_Bookmark5">
+<div id="Bookmark5"></div>
+
 </div>
 </div>
 </div>
@@ -628,7 +677,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text4">
-<span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:24px;">جميع الحقوق محفوظة لشركة إنجاز لنقل العفش لسنة 2021</span>
+<span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:24px;">جميع الحقوق محفوظة لشركة الخبير لنقل العفش لسنة 2021</span>
 </div>
 </div>
 <div class="col-2">
